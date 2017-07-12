@@ -1,0 +1,25 @@
+{
+  "name": "d3conduit",
+  "version": "0.0.1",
+  "description": "Simple Conduit to allow you to write pure D3 and render it as a component in your react app.",
+  "main": "d3Conduit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HMAN1911/d3Conduit.git"
+  },
+  "author": "HMAN1911",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HMAN1911/d3Conduit/issues"
+  },
+  "homepage": "https://github.com/HMAN1911/d3Conduit#readme",
+  "dependencies": {
+    "d3": "^4.9.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "shortid": "^2.2.8"
+  }
+}
