@@ -79,8 +79,8 @@ const d3Conduit = (initFn, renderFn, options) =>
       const resize = () => {
         const targetWidth = parseInt(container.style('width'), 0);
         svg
-          .attr('width', targetWidth)
-          .attr('height', Math.round(targetWidth / aspect));
+          .attr('width', '100%')
+          .attr('height', '100%');
       };
 
       svg
