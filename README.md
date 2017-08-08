@@ -1,5 +1,7 @@
 # D3Conduit
 
+[![CircleCI](https://circleci.com/gh/HMAN1911/d3Conduit/tree/master.svg?style=svg)](https://circleci.com/gh/HMAN1911/d3Conduit/tree/master)
+
 Simple Conduit to allow you to write pure D3 and render it as a component in your react app.
 
 # How to Use
