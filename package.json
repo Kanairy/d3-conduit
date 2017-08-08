@@ -4,7 +4,7 @@
   "description": "Simple Conduit to allow you to write pure D3 and render it as a component in your react app.",
   "main": "./dist/d3Conduit.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --ignore spec.js,test.js --out-dir dist",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
