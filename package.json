@@ -21,6 +21,7 @@
   "homepage": "https://github.com/HMAN1911/d3Conduit#readme",
   "dependencies": {
     "d3": "^4.9.1",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "shortid": "^2.2.8"
