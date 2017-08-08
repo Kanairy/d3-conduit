@@ -6,9 +6,15 @@ Simple Conduit to allow you to write pure D3 and render it as a component in you
 
 Install it:
 
-`yarn add d3conduit` `npm i -S d3conduit`
+`yarn add d3conduit`
+
+or
+
+`npm i -S d3conduit`
 
 d3Conduit essentially hijacks the rendering portion of a react component and handles changes in data via two essential functions you pass to it: `init` and `render`.
+
+[Examples](https://hman1911.github.io/d3Conduit/)
 
 You should implement them like this:
 
@@ -74,6 +80,7 @@ const App =() => (
 
 The render function you provided to d3Conduit will now be called every time the `data` prop changes.
 
+Take a look in the `/stories` directory for an example of how to implement all of the above.
 
 # License
 
