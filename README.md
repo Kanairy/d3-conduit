@@ -1,6 +1,4 @@
-# D3Conduit
-
-[![CircleCI](https://circleci.com/gh/HMAN1911/d3Conduit/tree/master.svg?style=svg)](https://circleci.com/gh/HMAN1911/d3Conduit/tree/master)
+# React D3Conduit [![CircleCI](https://circleci.com/gh/HMAN1911/d3Conduit/tree/master.svg?style=svg)](https://circleci.com/gh/HMAN1911/d3Conduit/tree/master)
 
 Simple Conduit to allow you to write pure D3 and render it as a component in your react app.
 
@@ -8,30 +6,34 @@ Simple Conduit to allow you to write pure D3 and render it as a component in you
 
 Install it:
 
-`npm i -S d3conduit`
+`yarn add d3conduit` `npm i -S d3conduit`
 
 d3Conduit essentially hijacks the rendering portion of a react component and handles changes in data via two essential functions you pass to it: `init` and `render`.
 
 You should implement them like this:
 
 ```js
-// this function handles the initial draw of D3 data.
+// This function handles the initial draw of D3 data.
 // it will only be called once by d3Conduit. The node argument
 // is a reference to the dom node created by d3Conduit.
-// As a general rule, this function should not be drawing anything
-// relating to the data itself.
+
+// This is the ideal place to render any 'one time draw' items,
+// like axes or labels.
 export const sampleInit = (node, data, options) => {
- 
+
 };
 
-// this function will be called every time the data prop changes.
-// it should implement the general update patter (update, enter, exit)
+// This function will be called every time the data prop changes.
+// it should implement the general update patter (update, enter, exit).
+
+// Take a look at the storybook and relating code to see examples
+// of how to do this.
 export const sampleRender = (node, data, options) => {
 
 };
 ```
 
-Now you need to create a conduit. To do that, call d3Conduit with your functions, as well as an options object that defines the dimensions and margins of the resulting graph. It will return a react component:
+Now you need to create a conduit. To do that, call d3Conduit with your functions, as well as an optional `options` object. You can define anything you want in the options object, and it will be passed to you in both your `init` and `render` functions.
 
 ```js
 import d3Conduit from 'd3conduit';
@@ -50,7 +52,7 @@ const SampleChart = d3Conduit(sampleInit, sampleRender, {
 });
 ```
 
-Now you can render this component anywhere in your app. It expects a `data` prop.
+Now you can render this component anywhere in your app. It expects a single `data` prop. How you consume this prop is entirely up to you.
 
 ```js
 
