@@ -4,8 +4,10 @@
   "description": "Simple Conduit to allow you to write pure D3 and render it as a component in your react app.",
   "main": "./dist/d3Conduit.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -24,10 +26,16 @@
     "shortid": "^2.2.8"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.3",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
+    "babel-jest": "^20.0.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "jest": "^20.0.4",
+    "lodash": "^4.17.4",
+    "react-test-renderer": "^15.6.1"
   }
 }
