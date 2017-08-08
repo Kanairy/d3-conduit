@@ -5,7 +5,7 @@
   "main": "./dist/d3Conduit.js",
   "scripts": {
     "build": "babel src --ignore spec.js,test.js --out-dir dist",
-    "test": "jest",
+    "test": "jest --env=jsdom --forceExit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

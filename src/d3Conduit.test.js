@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 
-import d3Conduit from './d3Conduit'
+import d3Conduit from '../dist/d3Conduit'
 
 describe('d3Conduit', () => {
   it('fails to produce a component without any functions', () => {
