@@ -1,6 +1,6 @@
 {
   "name": "d3conduit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple Conduit to allow you to write pure D3 and render it as a component in your react app.",
   "main": "./dist/d3Conduit.js",
   "scripts": {
