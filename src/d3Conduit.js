@@ -19,7 +19,7 @@ const d3Conduit = (initFn, renderFn, originalOptions) => {
   }
 
   if (typeof renderFn !== 'function') {
-    throw new Error('must provide an render function')
+    throw new Error('must provide a render function')
   }
   
   const options = Object.assign(
