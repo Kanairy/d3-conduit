@@ -10,6 +10,7 @@ import { Button, Welcome } from '@storybook/react/demo'
 import HorizontalBarChart from './HorizontalBarChart'
 import HorizontalBarChartNoDimensions from './HorizontalBarChart/noDimensions'
 import HorizontalBarChartDynamic from './HorizontalBarChart/dynamic'
+// import LineChartDynamic from './LineChartDynamic/dynamic'
 
 // curved line charts
 import LineChart from './LineChart'
@@ -52,4 +53,4 @@ storiesOf('Horizontal Bar Chart', module)
   .add('dynamic data updates', () => <HorizontalBarChartDynamic />)
 
 storiesOf('Curved Line Chart', module)
-  .add('provided dimensions', () => <LineChart data={sampleData} />)
+  .add('provided dimensions', () => <LineChart data={sample2} />)
