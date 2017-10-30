@@ -44,7 +44,7 @@ var d3Conduit = function d3Conduit(initFn, renderFn, originalOptions) {
   }
 
   if (typeof renderFn !== 'function') {
-    throw new Error('must provide an render function');
+    throw new Error('must provide a render function');
   }
 
   var options = Object.assign(originalOptions, (0, _lodash.defaultsDeep)(originalOptions, {
