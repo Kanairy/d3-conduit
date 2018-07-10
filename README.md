@@ -14,7 +14,7 @@ or
 
 d3Conduit essentially hijacks the rendering portion of a react component and handles changes in data via two essential functions you pass to it: `init` and `render`.
 
-[Examples](https://hman1911.github.io/d3Conduit/)
+[Examples](https://hman1911.github.io/d3-conduit)
 
 You should implement them like this:
 
@@ -45,7 +45,9 @@ Now you need to create a conduit. To do that, call d3Conduit with your functions
 import d3Conduit from 'd3conduit';
 import { sampleInit, sampleRender } from './drawFunctions';
 
-const SampleChart = d3Conduit(sampleInit, sampleRender, {
+const SampleChart = d3Conduit(sampleInit, sampleRender, 
+//sample options object being provided
+{
   displayName: 'sampleReport',
   width: 800,
   height: 300,
